@@ -1,5 +1,73 @@
-h1 {
-    justify-content: center;
-    font-style: italic;
+html {
+    height: 100%;
+}
 
+body {
+    /* Imagen de fondo de Hornet */
+    background-image: url('https://images.alphacoders.com/133/1331083.jpeg');
+    
+    /* Para que la imagen cubra toda la pantalla */
+    background-size: cover;
+    
+    /* Para centrar la imagen */
+    background-position: center;
+    
+    /* Para que no se repita */
+    background-repeat: no-repeat;
+    
+    /* Para que el fondo quede fijo al hacer scroll */
+    background-attachment: fixed;
+
+    /* Aseguramos que no haya márgenes por defecto */
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    min-height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 20px 0;
+    font-size: 3em;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para legibilidad */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 30%;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
